@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    perspective: 700px;
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('./pexels-pixabay-53594.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.air{
+    position: absolute;
+ height: 170px;
+ width: 200px;
+   top: 70%;
+   left: 0;
+   transform: rotateY(320deg);
+animation: move 20s ease-in-out infinite;
+}
+
+.air-img{
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
+@keyframes move {
+   0%{
+      top: 70%;
+      left: 0;
+      transform: rotateY(320deg);
+      
+  }
+  10%{
+     top: 65%;
+     transform: rotateY(315deg);
+  }
+  
+  20%{
+   
+     transform: rotateY(305deg);
+  }
+  30%{
+     
+     transform: rotateY(295deg);
+  }
+  
+  35%{
+     
+     transform: rotateY(285deg);
+  }
+  
+  40%{
+     
+     transform: rotateY(275deg);
+  }
+  
+  45%{
+     top: 20%;
+     left: 72%;
+     transform: rotateY(265deg);
+  }
+  
+  55%{
+     top: 10%;
+     transform: rotateY(255deg);
+  }
+  
+  65%{
+     
+     transform: rotateY(245deg);
+  }
+  
+  75%{
+     top: 8%;
+     transform: rotateY(235deg);
+  }
+  
+  85%{
+     top: 6%;
+     transform: rotateY(222deg)
+  }
+  
+  95%{
+     transform: rotateY(215deg);
+  }
+  
+  100%{
+     top: 4%;
+     left: 0%;
+     transform: rotateY(210deg);
+  }
+ 
+}
+
+.ballon{
+   position: absolute;
+   width: 45px;
+   height: 45px;
+}
+
+.ballon img{
+   width: 100%;
+   height: 100%;
+}
+
+.ballon1{
+top: 8%;
+left: 3%;
+animation: ballon1 20s ease-in-out infinite;
+}
+.ballon2{
+   top: 30%;
+   left: 6%; 
+   animation: ballon2 20s ease-in-out infinite;
+}
+.ballon3{
+   top: 20%;
+left: 10%;
+animation: ballon3 20s ease-in-out infinite;
+}
+.ballon4{
+   top: 25%;
+left: 15%;
+animation: ballon4 20s ease-in-out infinite;
+}
+
+@keyframes ballon1{
+   from {
+      top: 8%;
+      left: 3%;
+   }
+
+   to{
+      top: 50%;
+      left: 30%;
+   }
+}
+
+@keyframes ballon2{
+   from {
+      top: 30%;
+      left: 6%;
+   }
+
+   to{
+      top: 5%;
+      left: 40%;
+   }
+}
+
+
+@keyframes ballon3{
+   from {
+      top: 20%;
+      left: 30%;
+   }
+
+   to{
+      top: 20%;
+      left: 0%;
+   }
+}
+
+@keyframes ballon4{
+   from {
+      top: 20%;
+      left: 70%;
+   }
+
+   to{
+      top: 35%;
+      left: 20%;
+   }
+}
